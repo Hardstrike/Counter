@@ -17,16 +17,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="240dp">
+        android:layout_marginLeft="@dimen/Layout_Margin">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:padding="16dp"
+            android:padding="@dimen/Padding_S2"
             android:text="Shooter 2"
-            android:textColor="#616161"
-            android:textSize="17sp" />
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/TxtSize_S2" />
 
         <TextView
             android:id="@+id/score_S2"
@@ -34,36 +34,36 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:paddingBottom="24dp"
+            android:paddingBottom="@dimen/Count_S2"
             android:text="0"
             android:textColor="#000000"
-            android:textSize="45sp" />
+            android:textSize="@dimen/TxtSize_PointsS2" />
         <TextView
             android:id="@+id/shots_S2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:paddingBottom="24dp"
+            android:paddingBottom="@dimen/Padding_ShotsS2"
             android:text="0"
             android:textColor="#000000"
-            android:textSize="30sp" />
+            android:textSize="@dimen/Size_ShotsS2" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="vertical"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp">
+        android:layout_marginLeft="@dimen/Margin_S1">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:padding="16dp"
+            android:padding="@dimen/Padding_S1"
             android:text="Shooter 1"
-            android:textColor="#616161"
-            android:textSize="17sp" />
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/TxtSize_S1" />
 
         <TextView
             android:id="@+id/score_S1"
@@ -71,10 +71,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:paddingBottom="24dp"
+            android:paddingBottom="@dimen/Padding_PointsS1"
             android:text="0"
             android:textColor="#000000"
-            android:textSize="45sp" />
+            android:textSize="@dimen/TxtSize_PointsS1" />
 
         <TextView
             android:id="@+id/shots_S1"
@@ -82,10 +82,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:paddingBottom="24dp"
+            android:paddingBottom="@dimen/Padding_ShotsS1"
             android:text="0"
             android:textColor="#000000"
-            android:textSize="30sp" />
+            android:textSize="@dimen/TxtSize_ShotsS1" />
     </LinearLayout>
 
 
@@ -93,33 +93,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="@dimen/Margin_Buttons">
 
     <LinearLayout
         android:layout_width="@dimen/layoutwidth"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_marginTop="120dp">
+        android:layout_marginTop="@dimen/Margin_Buttons1">
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="@dimen/MarginB_7S1"
+            android:layout_marginLeft="@dimen/MarginL_7S1"
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
-            android:layout_marginRight="24dp"
+            android:layout_marginRight="@dimen/MarginR_7S1"
             android:onClick="addSevenforS1"
             android:text="+7 Points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginBottom="@dimen/MarginB_8S1"
+            android:layout_marginLeft="@dimen/MarginL_8S1"
+            android:layout_marginRight="@dimen/MarginR_8S1"
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addEightforS1"
@@ -128,9 +128,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginBottom="@dimen/MarginB_9S1"
+            android:layout_marginLeft="@dimen/MarginL_9S1"
+            android:layout_marginRight="@dimen/MarginR_9S1"
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addNineforS1"
@@ -138,9 +138,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginBottom="@dimen/MarginB_10S1"
+            android:layout_marginLeft="@dimen/MarginL_10S1"
+            android:layout_marginRight="@dimen/MarginR_RS10"
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addXforS1"
@@ -153,22 +153,22 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="@dimen/MarginBetween"
             android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="@dimen/Margin_Buttons2"
             android:orientation="vertical">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/MarginB_7S2"
+                android:layout_marginLeft="@dimen/MarginL_7S2"
+                android:layout_marginRight="@dimen/MarginR_7S2"
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addSevenforS2"
@@ -177,9 +177,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
+                android:layout_marginBottom="@dimen/MarginB_8S2"
+                android:layout_marginLeft="@dimen/MarginL_8S2"
+                android:layout_marginRight="@dimen/MarginR_8S2"
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addEightforS2"
@@ -188,9 +188,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
+                android:layout_marginBottom="@dimen/MarginB_9S2"
+                android:layout_marginLeft="@dimen/MarginL_9S2"
+                android:layout_marginRight="@dimen/MarginR_9S2"
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addNineforS2"
@@ -198,9 +198,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
+                android:layout_marginBottom="@dimen/MarginB_10S2"
+                android:layout_marginLeft="@dimen/MarginL_10S2"
+                android:layout_marginRight="@dimen/MarginR_10S2"
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addXforS2"
@@ -213,7 +213,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/Margin_Reset"
         android:onClick="resetScore"
         android:text="Reset" />
 
