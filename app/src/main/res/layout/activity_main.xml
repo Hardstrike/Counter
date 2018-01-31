@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/board"
+        android:scaleType="fitStart"
+        android:scaleX="0.9"
+        android:scaleY="0.8"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="240dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Shooter 2"
+            android:textColor="#616161"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/score_S2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+        <TextView
+            android:id="@+id/shots_S2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Shooter 1"
+            android:textColor="#616161"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/score_S1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/shots_S1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/cam3"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="24dp"
+            android:onClick="addSevenforS1"
+            android:text="+7 Points" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/cam3"
+            android:textColor="@android:color/white"
+            android:onClick="addEightforS1"
+            android:text="+8 Points" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/cam3"
+            android:textColor="@android:color/white"
+            android:onClick="addNineforS1"
+            android:text="+9 Points" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/cam3"
+            android:textColor="@android:color/white"
+            android:onClick="addXforS1"
+            android:text="+10 Points" />
+
+
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/cam3"
+                android:textColor="@android:color/white"
+                android:onClick="addSevenforS2"
+                android:text="+7 Points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/cam3"
+                android:textColor="@android:color/white"
+                android:onClick="addEightforS2"
+                android:text="+8 Points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/cam3"
+                android:textColor="@android:color/white"
+                android:onClick="addNineforS2"
+                android:text="+9 Points" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/cam3"
+                android:textColor="@android:color/white"
+                android:onClick="addXforS2"
+                android:text="+10 Points" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="resetScore"
+        android:text="Reset" />
+
+</RelativeLayout>
