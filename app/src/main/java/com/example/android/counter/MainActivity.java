@@ -23,61 +23,55 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreShooter1 = 0;
+    int scoreShooter1;
 
-    int scoreShooter2 = 0;
+    int scoreShooter2;
 
-    int noofShotsS1 = 0;
+    int noofShotsS1;
 
-    int noofShotsS2 = 0;
+    int noofShotsS2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void addSevenforS1(View v) {
         scoreShooter1 = scoreShooter1 + 7;
         noofShotsS1 = noofShotsS1 +1;
         displayForS1(scoreShooter1);
         displayShotsS1(noofShotsS1);
     }
-
     public void addEightforS1(View v) {
         scoreShooter1 = scoreShooter1 + 8;
         noofShotsS1 = noofShotsS1 +1;
         displayForS1(scoreShooter1);
         displayShotsS1(noofShotsS1);
     }
-
     public void addNineforS1(View v) {
         scoreShooter1 = scoreShooter1 + 9;
         noofShotsS1 = noofShotsS1 +1;
         displayForS1(scoreShooter1);
         displayShotsS1(noofShotsS1);
-    }
+}
     public void addXforS1(View v) {
         scoreShooter1 = scoreShooter1 + 10;
         noofShotsS1 = noofShotsS1 +1;
         displayForS1(scoreShooter1);
         displayShotsS1(noofShotsS1);
     }
-
     public void addSevenforS2(View v) {
         scoreShooter2 = scoreShooter2 + 7;
         noofShotsS2 = noofShotsS2 +1;
         displayForS2(scoreShooter2);
         displayShotsS2(noofShotsS2);
     }
-
     public void addEightforS2(View v) {
         scoreShooter2 = scoreShooter2 + 8;
         noofShotsS2 = noofShotsS2 +1;
         displayForS2(scoreShooter2);
         displayShotsS2(noofShotsS2);
     }
-
     public void addNineforS2(View v) {
         scoreShooter2 = scoreShooter2 + 9;
         noofShotsS2 = noofShotsS2 +1;
@@ -90,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         displayForS2(scoreShooter2);
         displayShotsS2(noofShotsS2);
     }
-
     public void resetScore(View v) {
         scoreShooter1 = 0;
         noofShotsS1 = 0;
@@ -98,23 +91,21 @@ public class MainActivity extends AppCompatActivity {
         noofShotsS2 = 0;
         displayForS1(scoreShooter1);
         displayForS2(scoreShooter2);
+        displayShotsS1(noofShotsS1);
+        displayShotsS2(noofShotsS2);
     }
-
     public void displayForS1(int score) {
         TextView scoreView = (TextView) findViewById(R.id.score_S1);
         scoreView.setText(String.valueOf(score));
     }
-
     public void displayForS2(int score) {
         TextView scoreView = (TextView) findViewById(R.id.score_S2);
         scoreView.setText(String.valueOf(score));
     }
-
     public void displayShotsS1(int score) {
         TextView scoreView = (TextView) findViewById(R.id.shots_S1);
         scoreView.setText(String.valueOf(score));
     }
-
     public void displayShotsS2(int score) {
         TextView scoreView = (TextView) findViewById(R.id.shots_S2);
         scoreView.setText(String.valueOf(score));

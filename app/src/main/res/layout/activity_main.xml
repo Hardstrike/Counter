@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,7 +11,6 @@
         android:scaleX="0.9"
         android:scaleY="0.8"
         />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,10 +22,9 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:padding="@dimen/Padding_S2"
-            android:text="Shooter 2"
+            android:text="@string/S2_Name"
             android:textColor="@android:color/darker_gray"
             android:textSize="@dimen/TxtSize_S2" />
-
         <TextView
             android:id="@+id/score_S2"
             android:layout_width="match_parent"
@@ -49,7 +46,6 @@
             android:textColor="#000000"
             android:textSize="@dimen/Size_ShotsS2" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="vertical"
@@ -61,10 +57,9 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:padding="@dimen/Padding_S1"
-            android:text="Shooter 1"
+            android:text="@string/S1_Name"
             android:textColor="@android:color/darker_gray"
             android:textSize="@dimen/TxtSize_S1" />
-
         <TextView
             android:id="@+id/score_S1"
             android:layout_width="match_parent"
@@ -75,7 +70,6 @@
             android:text="0"
             android:textColor="#000000"
             android:textSize="@dimen/TxtSize_PointsS1" />
-
         <TextView
             android:id="@+id/shots_S1"
             android:layout_width="match_parent"
@@ -87,8 +81,6 @@
             android:textColor="#000000"
             android:textSize="@dimen/TxtSize_ShotsS1" />
     </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,8 +93,6 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/Margin_Buttons1">
-
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,8 +102,7 @@
             android:textColor="@android:color/white"
             android:layout_marginRight="@dimen/MarginR_7S1"
             android:onClick="addSevenforS1"
-            android:text="+7 Points" />
-
+            android:text="@string/Add7_S1" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,8 +112,7 @@
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addEightforS1"
-            android:text="+8 Points" />
-
+            android:text="@string/Add8_S1" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,7 +122,7 @@
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addNineforS1"
-            android:text="+9 Points" />
+            android:text="@string/Add9_S1" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -144,25 +132,19 @@
             android:background="@drawable/cam3"
             android:textColor="@android:color/white"
             android:onClick="addXforS1"
-            android:text="+10 Points" />
-
-
-
-
+            android:text="@string/Add10_S1" />
     </LinearLayout>
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/MarginBetween"
             android:background="@android:color/darker_gray" />
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginTop="@dimen/Margin_Buttons2"
             android:orientation="vertical">
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,8 +154,7 @@
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addSevenforS2"
-                android:text="+7 Points" />
-
+                android:text="@string/Add7_S2" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -183,8 +164,7 @@
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addEightforS2"
-                android:text="+8 Points" />
-
+                android:text="@string/Add8_S2" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,7 +174,7 @@
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addNineforS2"
-                android:text="+9 Points" />
+                android:text="@string/Add9_S2" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -204,10 +184,9 @@
                 android:background="@drawable/cam3"
                 android:textColor="@android:color/white"
                 android:onClick="addXforS2"
-                android:text="+10 Points" />
+                android:text="@string/Add10_S2" />
         </LinearLayout>
     </LinearLayout>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -216,5 +195,4 @@
         android:layout_marginBottom="@dimen/Margin_Reset"
         android:onClick="resetScore"
         android:text="Reset" />
-
 </RelativeLayout>
